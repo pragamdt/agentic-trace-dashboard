@@ -7,7 +7,7 @@ def get_all_runs():
     try:
         connection = sqlite3.connect(db_file)
         cursor = connection.cursor()
-        # Group by run_id to grab one clean entry per session trace
+
         cursor.execute("""
             SELECT run_id,
             MAX(prompt) as prompt,
@@ -61,7 +61,6 @@ st.set_page_config(page_title="Gemini Agent Trace Logs", page_icon="🤖", layou
 st.title("Gemini Agent Trace & Replay", text_alignment="center")
 st.caption("Inspect tool evaluation sequences, intermediate arguments, and history condensation logs.", text_alignment="center")
 
-# Load runs from the SQLite log matrix
 all_runs = get_all_runs()
 
 if not all_runs:
