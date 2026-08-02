@@ -3,7 +3,6 @@ from ddgs import DDGS
 WORKSPACE_DIR = os.path.abspath("my_project_agent_files")
 os.makedirs(WORKSPACE_DIR, exist_ok=True)
 
-# Web search tool
 def web_search(query: str) ->str:
     """Searches the web and returns result"""
     try:

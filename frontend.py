@@ -67,10 +67,8 @@ all_runs = get_all_runs()
 if not all_runs:
     st.info("No execution traces found yet. Run agent5.py script to populate the database!")
 else:
-    # Sidebar Configuration Selector
     st.sidebar.header("Choose a prompt you want to analyse")
     
-    # Map out options nicely in the sidebar dropdown box
     run_options = {}
     for row in all_runs:
         run_options[row[0]]=f"{row[1][:50]}..."
