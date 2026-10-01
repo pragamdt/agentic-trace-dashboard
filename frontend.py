@@ -64,7 +64,7 @@ st.caption("Inspect tool evaluation sequences, intermediate arguments, and histo
 all_runs = get_all_runs()
 
 if not all_runs:
-    st.info("No execution traces found yet. Run agent5.py script to populate the database!")
+    st.info("No execution traces found yet. Run agent.py script to populate the database!")
 else:
     st.sidebar.header("Choose a prompt you want to analyse")
     
