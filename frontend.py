@@ -58,7 +58,7 @@ def get_token_details(curr_run_id):
 #---------------------------------------------------------UI Part----------------------------------------------------------------
 st.set_page_config(page_title="Gemini Agent Trace Logs", page_icon="🤖", layout="wide")
 
-st.title("Gemini Agent Trace & Replay", text_alignment="center")
+st.title("Gemini Agent Trace & Dashboard", text_alignment="center")
 st.caption("Inspect tool evaluation sequences, intermediate arguments, and history condensation logs.", text_alignment="center")
 
 all_runs = get_all_runs()
